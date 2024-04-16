@@ -8,39 +8,7 @@
 </head>
 <body>
 <script>
-        function pedirNota(mensaje) 
-        {
-            var nota;
-            do 
-            {
-                nota = prompt(mensaje);
-                if (isNaN(nota)) 
-                {
-                    alert("Por favor, introduce una nota válida.");
-                }
-            } while (isNaN(nota));
-            return parseFloat(nota);
-        }
 
-
-        var nota1 = pedirNota("Introduce la primera nota:");
-        var nota2 = pedirNota("Introduce la segunda nota:");
-        var nota3 = pedirNota("Introduce la tercera nota:");
-
-        var media = (nota1 + nota2 + nota3) / 3;
-
-
-        var mensaje;
-        if (media >= 3) 
-        {
-            mensaje = "Aprobado con una nota media de " + media.toFixed(2);
-        } else 
-        {
-            mensaje = "Reprobado con una nota media de " + media.toFixed(2);
-        }
-
-
-        alert(mensaje);
 </script>
 </body>
 </html>
